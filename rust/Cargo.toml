@@ -7,9 +7,11 @@ edition = "2021"
 # I don't care what the docs say; without this, cargo test doesn't work.
 members = [
     "cons-rs",
+    "proc-macro-playground",
     "rustcomp",
 ]
 
 [dependencies]
 cons = { path = "./cons-rs" }
+proc-macro-playground = { path = "./proc-macro-playground" }
 rustcomp = { path = "./rustcomp" }

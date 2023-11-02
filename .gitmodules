@@ -6,3 +6,7 @@
 	path = rust/cons-rs
 	url = git@github.com:dablenparty/cons-rs.git
 	branch = main
+[submodule "rust/proc-macro-playground"]
+	path = rust/proc-macro-playground
+	url = git@github.com:dablenparty/proc-macro-playground.git
+	branch = main
