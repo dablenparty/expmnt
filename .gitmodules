@@ -1,0 +1,8 @@
+[submodule "rust/rustcomp"]
+	path = rust/rustcomp
+	url = git@github.com:dablenparty/rustcomp.git
+	branch = main
+[submodule "rust/cons-rs"]
+	path = rust/cons-rs
+	url = git@github.com:dablenparty/cons-rs.git
+	branch = main

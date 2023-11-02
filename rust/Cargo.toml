@@ -1,0 +1,15 @@
+[package]
+name = "expmnt"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+# I don't care what the docs say; without this, cargo test doesn't work.
+members = [
+    "cons-rs",
+    "rustcomp",
+]
+
+[dependencies]
+cons = { path = "./cons-rs" }
+rustcomp = { path = "./rustcomp" }
