@@ -1,13 +1,17 @@
 /// A Rust implementation of the
 /// [Fast Inverse Square Root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 pub fn rsqrt(number: f32) -> f32 {
+    const ITERATIONS: usize = 1;
     const THREE_HALVES: f32 = 1.5;
     let transmuted = number.to_bits();
     let bit_hack = 0x5f3759df - (transmuted >> 1);
-    let y = f32::from_bits(bit_hack);
+    let mut y = f32::from_bits(bit_hack);
     // this can be done a second time, but it's not necessary
     let x2 = number * 0.5;
-    y * (THREE_HALVES - (x2 * y * y))
+    for _ in 0..ITERATIONS {
+        y *= THREE_HALVES - (x2 * y * y);
+    }
+    y
 }
 
 #[cfg(test)]
