@@ -1,4 +1,5 @@
-/// https://en.wikipedia.org/wiki/Fast_inverse_square_root
+/// A Rust implementation of the
+/// [Fast Inverse Square Root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 pub fn rsqrt(number: f32) -> f32 {
     const THREE_HALVES: f32 = 1.5;
     let transmuted = number.to_bits();

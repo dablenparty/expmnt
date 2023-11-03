@@ -4,13 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace]
-# I don't care what the docs say; without this, cargo test doesn't work.
-members = [
-    "bitdemo",
-    "cons-rs",
-    "proc-macro-playground",
-    "rustcomp",
-]
 
 [dependencies]
 bitdemo = { path = "./bitdemo" }
