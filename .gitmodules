@@ -10,3 +10,11 @@
 	path = rust/proc-macro-playground
 	url = git@github.com:dablenparty/proc-macro-playground.git
 	branch = main
+[submodule "rust/mapstruct"]
+	path = rust/mapstruct
+	url = git@github.com:dablenparty/mapstruct.git
+	branch = main
+[submodule "rust/rustini"]
+	path = rust/rustini
+	url = git@github.com:dablenparty/rustini.git
+	branch = main
