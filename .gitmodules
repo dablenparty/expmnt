@@ -18,3 +18,7 @@
 	path = rust/rustini
 	url = git@github.com:dablenparty/rustini.git
 	branch = main
+[submodule "rust/prime-sieves"]
+	path = rust/prime-sieves
+	url = git@github.com:dablenparty/prime-sieves.git
+	branch = main

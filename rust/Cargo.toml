@@ -10,5 +10,6 @@ bitdemo = { path = "./bitdemo" }
 cons = { path = "./cons-rs" }
 mapstruct = { path = "mapstruct" }
 proc-macro-playground = { path = "./proc-macro-playground" }
+rust-primes = { path = "prime-sieves" }
 rustcomp = { path = "./rustcomp" }
 rustini = { path = "rustini" }
